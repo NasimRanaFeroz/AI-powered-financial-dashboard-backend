@@ -1,12 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const connectDB = require('./config/db'); // Adjust the path as necessary
+const connectDB = require('./config/db');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Connect to the database
 connectDB();
 
 app.use(bodyParser.json());

@@ -1,4 +1,4 @@
-const Asset = require('../models/Asset');
+const Asset = require('../models/StaticAsset');
 
 // Get all assets
 exports.getAllAssets = async (req, res) => {
